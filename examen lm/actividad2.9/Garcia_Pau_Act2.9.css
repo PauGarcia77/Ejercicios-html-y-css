@@ -1,0 +1,31 @@
+#divDreta{
+    float: right;
+    margin: 0;
+    right: 0;
+    text-align: right;
+    border: 2px dotted black;
+    padding: 5px;
+    width: 35%;
+}
+#divEsquerra{
+    float: left;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    border: 2px dotted black;
+    padding: 5px; 
+    width: 35%;
+}
+#divCentral{
+   text-align: right;
+   padding: 150px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+    color: white;
+}

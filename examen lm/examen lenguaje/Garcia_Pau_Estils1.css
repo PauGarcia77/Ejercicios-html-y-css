@@ -1,0 +1,33 @@
+body{
+    margin: 0; /* Pongo que se quiten todos los margenes por si hay alguno por defecto en el navegador*/
+    padding: 0; /* Aqui lo mismo pero con el padding */
+    font-family: Arial, Helvetica, sans-serif; /*Pongo un tipo de fuente determinada para todo el body*/
+} 
+a{
+    text-decoration: none; /* hago que se quite lo subrayado al salir que es como un link pero lo quita*/
+    color: #1d9031; /* Pongo el color de la letra del nav a*/
+    margin: 15px; /* Y pongo que haya entre ellos una separacion de 15px*/
+}
+h1{
+    width: 15%;/* Eligo lo que quiera que ocupe el titulo de toda la anchura*/
+    padding-left: 30px; /* Le pongo padding a la izquierda para que me lo separe un pco de la izquierda*/
+}
+header{
+    color: #1d9031;
+    margin: 1px;/* Pongo un margen de 5px para que haya un minimo espacio entre el header y el documento y el footer */
+    padding: 10px;/* Pongo padding al header para hacerlo un poco mas grande*/
+    border: 1px solid #1d9031 ;/* Pone un borde de 1px de tipo solido de color verde */
+    display: flex;  /* Define un contenedor flexible para los elementos dentro del header */
+    justify-content: space-between;  /* Distribuye el espacio entre los elementos del header */
+    text-align: center; /* alinea el texto y lo pone centrado */
+    align-items: center; /* alinea los elementos en el centro es decir de forma vertical*/
+}
+
+footer{
+    position: fixed;/* Le pongo posicion fija para que si en el caso de que scrollearamos se quedara fijo*/
+    bottom: 0;/* Le pongo bottom para que este abajo del todo*/
+    width: 100%;/* Pongo que ocupe el 100% de la pantalla*/
+    background-color: #1d9031;/*Selecciono un color de fondo*/
+    text-align: center;/*Alineo el texto en el centro*/
+    color: white;/*Por ultimo le pongo el color blanco al texto del footer*/
+}

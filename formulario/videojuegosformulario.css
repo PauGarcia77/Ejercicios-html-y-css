@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../formulario/Roboto-Black.ttf)
+}
+
+* {
+    font-family: 'Roboto', Verdana, sans-serif;
+}
+
+body {
+    background-color: #efeff0;
+}
+
+label {
+    color: #696969;
+}
+
+input {
+    width: 200px;
+}
+
+div {
+    margin: 5px;
+}
+.fonsBlau {
+    background-color: #b0f3f8;
+}
+
+#comentarios {
+    background-color: lightpink;
+}
+
+#intro {
+    height: 50px;
+    align-content: center;
+    background: linear-gradient(to right, lightpink, aquamarine);
+    text-align: center;
+}
+[min]{
+    background-color: lightgoldenrodyellow;
+}
+select[required]{
+    background-color: aquamarine;
+    height: 110px;
+}
+input[type=text]{
+    background-color: mistyrose;
+}
+[type=submit]{
+    background-color: navy;
+    color: white;
+}

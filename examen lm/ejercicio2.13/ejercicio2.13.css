@@ -1,0 +1,67 @@
+body {
+    padding: 0;  /* Elimina el espacio de relleno predeterminado del cuerpo de la página */
+    margin: 0;   /* Elimina el margen predeterminado del cuerpo de la página */
+}
+
+header {
+    display: flex;  /* Define un contenedor flexible para los elementos dentro del header */
+    background-color: lightskyblue;  /* Establece el color de fondo del header a un azul claro */
+    flex-direction: row;  /* Los elementos dentro del header se alinean en una fila (por defecto) */
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan si es necesario */
+    justify-content: space-between;  /* Distribuye el espacio entre los elementos del header */
+    align-items: center;  /* Alinea los elementos verticalmente al centro del header */
+}
+
+img {
+    width: 100px;  /* Define el ancho de las imágenes a 100 píxeles */
+    height: 100px;  /* Define la altura de las imágenes a 100 píxeles */
+}
+
+#lista ul {
+    display: flex;  /* Los elementos de la lista se mostrarán como un contenedor flexible */
+    list-style: none;  /* Elimina los puntos de lista predeterminados de las listas */
+}
+
+li {
+    margin: 5%;  /* Aplica un margen del 5% alrededor de cada item de lista */
+    padding: 5%;  /* Aplica un relleno del 5% alrededor de cada item de lista */
+}
+
+a {
+    text-decoration: none;  /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+#buscador {
+    margin: 5%;  /* Aplica un margen del 5% alrededor del campo de búsqueda */
+}
+
+@media (max-width:800px){
+    /* Esta media query se aplica cuando el ancho de la pantalla es de 800px o menos */
+
+    #lista{
+        display: none;  /* Oculta la lista cuando el ancho de la pantalla es menor a 800px */
+    }
+
+    header::after {
+        content: "☰";  /* Agrega un símbolo de "hamburguesa" (☰) después del contenido del header */
+        font-size: 30px;  /* Establece el tamaño de la fuente del símbolo a 30px */
+        margin-left: 20px;  /* Añade un margen izquierdo de 20px al símbolo */
+    }
+}
+
+@media (max-width:600px){
+    /* Esta media query se aplica cuando el ancho de la pantalla es de 600px o menos */
+
+    #lista{
+        display: none;  /* Oculta la lista cuando el ancho de la pantalla es menor a 600px */
+    }
+    #buscador{
+        display: none;  /* Oculta el buscador cuando el ancho de la pantalla es menor a 600px */
+    }
+
+    header::after {
+        content: "☰";  /* Agrega el mismo símbolo de "hamburguesa" (☰) */
+        font-size: 30px;  /* Mantiene el tamaño de la fuente en 30px */
+        margin-left: 20px;  /* Añade un margen izquierdo de 20px al símbolo */
+    }
+}

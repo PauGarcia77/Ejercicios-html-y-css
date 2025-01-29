@@ -1,0 +1,30 @@
+table,caption{
+    text-align: center;
+    vertical-align: middle;
+    border: 1px, solid,darkblue;
+}
+thead{
+    background-color: brown;
+    color: white;
+    text-transform: uppercase;
+}
+tfoot{
+    background-color: brown;
+    color: white;
+    text-transform: uppercase;
+}
+tbody td:last-child {
+    font-weight: bold;
+}
+ tbody tr:nth-child(odd){
+    background-color: darkblue;
+    color: white;
+}
+tbody tr:nth-child(even){
+    background-color: white;
+    color: blue;
+}
+caption::selection{
+    color: darkviolet;
+}
+

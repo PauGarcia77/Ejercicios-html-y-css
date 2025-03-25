@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ListaTareas.css">
+</head>
+<body>
+    <h1>Lista de tareas</h1>
+    <form>
+        <div id="Comentarios">
+            <label for="assumpte">Introducir tarea:</label>
+            <input type="text" id="assumpte" name="assumpte">
+            <button type="button" onclick="añadirTarea()">Añadir Tarea</button>
+            <button type="button" id="eliminar">Eliminar Tarea</button>
+            <button type="button" onclick="tareas()" id="todas">Todas las tareas</button>
+            <button type="button" onclick="tareasNoCompletadas()" id="noCompletadas">Tareas no completadas</button>
+            <button type="button"  onclick="tareasCompletadas()" id="Completadas">Tareas Completadas</button>
+        </div>
+    </form>  
+      
+    <div id="ejemplo">
+        
+    </div>
+
+    <script src="ListaTareas.js"></script>
+</body>
+</html>

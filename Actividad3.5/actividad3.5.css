@@ -1,0 +1,171 @@
+body {
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo de la página */
+    margin: 0;  /* Elimina los márgenes predeterminados del cuerpo de la página */
+}
+
+header {
+    display: flex; /* Utiliza el modelo de diseño flexbox para el header */
+    background-color: lightskyblue; /* Establece el color de fondo del header */
+    flex-direction: row; /* Los elementos del header estarán en una fila */
+    flex-wrap: wrap; /* Los elementos pueden ajustarse a una nueva línea si es necesario */
+    justify-content: space-between; /* Espacia los elementos de manera uniforme */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    padding: 10px; /* Añade 10px de espacio interior en el header */
+}
+.logo>img{
+    width: 100px;
+    height: 100px;
+}
+div > img {
+    width: 200px; /* Establece el ancho de las imágenes a 100px */
+    height: 200px; /* Establece la altura de las imágenes a 100px */
+}
+
+#lista ul {
+    display: flex; /* Utiliza flexbox para el contenedor de la lista */
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    margin: 0; /* Elimina los márgenes predeterminados de la lista */
+}
+
+li {
+    margin: 5%; /* Añade un margen del 5% alrededor de cada elemento de la lista */
+    padding: 5%; /* Añade un relleno del 5% dentro de cada elemento de la lista */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+#lista {
+    display: none; /* Oculta el contenedor de la lista por defecto */
+    padding: 10px; /* Añade 10px de espacio interior al contenedor */
+    margin-top: 10px; /* Añade 10px de espacio encima del contenedor */
+}
+
+#lista.active {
+    display: block; /* Muestra el contenedor de la lista cuando tiene la clase 'active' */
+}
+
+#buscador {
+    margin: 5%; /* Añade un margen del 5% alrededor del contenedor de búsqueda */
+}
+#divcontenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas líneas */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+    padding: 60px;
+    text-align: center;
+}
+
+#camiseta {
+    border: 1px solid black;
+    width: 220px; /* Ancho fijo para las camisetas */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+@media (max-width:1920px){
+    #menu {
+        display: none; /* Oculta el menú en pantallas menores a 1920px */
+    }
+    #lista {
+        display: flex; /* Muestra la lista como un flexbox en pantallas menores a 1920px */
+    }
+}
+
+@media (max-width: 800px) {
+    #menu {
+        display: flex; /* Muestra el menú como un flexbox en pantallas menores a 800px */
+        cursor: pointer; /* Cambia el cursor para indicar que el menú es interactivo */
+    }
+
+    #lista {
+        display: none; /* Oculta la lista por defecto */
+        text-align: center; /* Centra el texto en la lista */
+        width: 100%; /* La lista ocupa todo el ancho disponible */
+        position: absolute; /* Coloca la lista de forma absoluta en la pantalla */
+        left: 0; /* Alinea la lista al borde izquierdo de la pantalla */
+        top: 120px; /* Coloca la lista a 120px desde la parte superior */
+        background-color: lightskyblue; /* Establece un color de fondo en la lista */
+    }
+
+    #lista.active {
+        display: block; /* Muestra la lista cuando tiene la clase 'active' */
+    }
+
+    #lista ul {
+        position: static; /* Restablece la posición de los elementos de la lista */
+        display: flex; /* Utiliza flexbox para los elementos de la lista */
+        flex-direction: column; /* Organiza los elementos de la lista en una columna */
+        align-items: center; /* Centra los elementos de la lista */
+        padding: 20px; /* Añade 20px de espacio interior a los elementos de la lista */
+        background-color: lightskyblue; /* Establece el color de fondo de la lista */
+    }
+
+    #lista ul li {
+        width: 100%; /* Los elementos de la lista ocupan todo el ancho disponible */
+        text-align: center; /* Centra el texto dentro de cada elemento de la lista */
+        margin: 10px 0; /* Añade márgenes de 10px arriba y abajo de cada elemento de la lista */
+        padding: 10px 0; /* Añade relleno de 10px arriba y abajo de cada elemento */
+    }
+
+    #buscador {
+        display: flex; /* Muestra el contenedor de búsqueda como un flexbox */
+    }
+    #divcontenedor {
+        justify-content: space-around;
+    }
+    
+    #camiseta{
+        width: 45%; /* Dos camisetas por fila */
+    }
+    
+    img {
+        width: 90%; /* Imagen se ajusta al contenedor */
+        height: auto; /* Mantiene la proporción */
+    }
+}
+
+@media (max-width: 600px) {
+    #menu {
+        display: flex; /* Muestra el menú como un flexbox en pantallas menores a 600px */
+        cursor: pointer; /* Cambia el cursor para indicar que el menú es interactivo */
+    }
+
+    #lista {
+        display: none; /* Oculta la lista por defecto */
+        text-align: center; /* Centra el texto en la lista */
+        width: 100%; /* La lista ocupa todo el ancho disponible */
+        position: absolute; /* Coloca la lista de forma absoluta en la pantalla */
+        left: 0; /* Alinea la lista al borde izquierdo de la pantalla */
+        top: 80px; /* Coloca la lista a 80px desde la parte superior */
+        background-color: lightskyblue; /* Establece un color de fondo en la lista */
+    }
+
+    #lista.active {
+        display: block; /* Muestra la lista cuando tiene la clase 'active' */
+    }
+
+    #lista ul {
+        position: static; /* Restablece la posición de los elementos de la lista */
+        display: flex; /* Utiliza flexbox para los elementos de la lista */
+        flex-direction: column; /* Organiza los elementos de la lista en una columna */
+        align-items: center; /* Centra los elementos de la lista */
+        padding: 20px; /* Añade 20px de espacio interior a los elementos de la lista */
+        background-color: lightskyblue; /* Establece el color de fondo de la lista */
+    }
+
+    #lista ul li {
+        width: 100%; /* Los elementos de la lista ocupan todo el ancho disponible */
+        text-align: center; /* Centra el texto dentro de cada elemento de la lista */
+        margin: 10px 0; /* Añade márgenes de 10px arriba y abajo de cada elemento de la lista */
+        padding: 10px 0; /* Añade relleno de 10px arriba y abajo de cada elemento */
+    }
+
+    #buscador {
+        display: none; /* Oculta el contenedor de búsqueda en pantallas menores a 600px */
+    }
+    #camiseta {
+        width: 80%; /* Una camiseta por fila en pantallas muy pequeñas */
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Actividad3.11.css">
+    <script src="Actividad3.11.js" defer></script>
+</head>
+
+<body>
+    <form id="form" action="Resultado.html" method="post">
+        <h1>Formulario Búsqueda Vuelos</h1>
+
+        <label for="origen">Origen:</label>
+        <select name="origen" id="origen" required>
+            <option value=""></option>
+            <option value="PMI">Palma</option>
+            <option value="MAD">Madrid</option>
+            <option value="BCN">Barcelona</option>
+        </select>
+        <label for="destino">Destino:</label>
+        <select name="destino" id="destino" required>
+            <option value=""></option>
+            <option value="PMI">Palma</option>
+            <option value="MAD">Madrid</option>
+            <option value="BCN">Barcelona</option>
+            <option value="LON">Londres</option>
+            <option value="PAR">Paris</option>
+            <option value="ROM">Roma</option>
+        </select>
+
+        <label for="date">Fecha de inicio:</label>
+        <input type="date" name="date" id="date" placeholder="introduce fecha de inicio" required>
+        <label for="date1">Fecha de fin:</label>
+        <input type="date" name="date1" id="date1" placeholder="introduce decha de fin" required>
+
+        <label for="adultos">Numero de Adultos:</label>
+        <input type="number" name="adultos" id="adultos" required min="1">
+
+        <label for="niños">Numero de niños:</label>
+        <input type="number" name="niños" id="niños">
+
+        <label for="date">Descuentos:</label>
+        <select name="opciones" id="opciones">
+            <option value="0"></option>
+            <option value="residente">Descuento Residente</option>
+            <option value="familia">Descuento Familia</option>
+        </select>
+        <input type="submit" name="enviar" id="enviar" placeholder="Enviar Formulario">
+    </form>
+
+</body>
+
+</html>
